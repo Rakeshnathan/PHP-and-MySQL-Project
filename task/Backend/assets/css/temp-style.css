@@ -1,0 +1,296 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #121212; /* Dark background for body */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    background-color: #1f1f1f; /* Slightly lighter background for main content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #bb86fc; /* Light purple for button */
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 24px;
+    color: #121212;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: #ffffff; /* White on hover */
+    color: #121212;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background-color: #1f1f1f; /* Dark header background */
+    padding-left: 20px;
+}
+
+.header .toggle-sidebar-btn {
+    font-size: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #bb86fc; /* Light purple for sidebar button */
+}
+
+.header .search-bar {
+    min-width: 360px;
+    padding: 0 20px;
+}
+
+/*--------------------------------------------------------------
+# Header Nav
+--------------------------------------------------------------*/
+.header-nav ul {
+    list-style: none;
+}
+
+.header-nav>ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .nav-icon {
+    font-size: 22px;
+    color: #bb86fc; /* Light purple for icons */
+    margin-right: 25px;
+    position: relative;
+}
+
+.header-nav .nav-profile {
+    color: #ffffff; /* Light text color */
+}
+
+.header-nav .nav-profile :hover{
+    color: #fffbfb;
+}
+
+.header-nav .nav-profile span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-nav .badge-number {
+    position: absolute;
+    inset: -2px -5px auto auto;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+.header-nav .profile {
+    min-width: 240px;
+    padding-bottom: 0;
+    top: 8px !important;
+}
+
+.header-nav .profile .dropdown-header h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #e0e0e0; /* Light text color */
+}
+
+.header-nav .profile .dropdown-header span {
+    font-size: 14px;
+}
+
+.header-nav .profile .dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.header-nav .profile .dropdown-item i {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 0;
+}
+
+.header-nav .profile .dropdown-item:hover {
+    background-color: #ff0000; /* Darker background on hover */
+}
+
+/* Styling for the intro section */
+.section {
+    position: relative;
+    background: url('assets/images/image 1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 40px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    border: 1px solid rgb(38, 114, 5); /* Single border for the section */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Styling for the card within the section */
+.section .card {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for readability */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust max width as needed */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    border: none; /* No additional border for the card */
+}
+
+/* Center content inside the card */
+.section .card-body {
+    text-align: center;
+}
+
+.section .card-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #f8f9fa;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    margin: 0;
+}
+
+.section p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color:#0f6734;
+    font-weight: 600;
+}
+
+
+
+/* Movie Cards */
+.movie-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-card {
+    background: #1f1f1f;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h2 {
+    color:#bb86fc;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    color:rgb(169, 169, 169);
+}
+
+/* Image Gallery */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.gallery-item {
+    width: calc(25% - 20px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+    .movie-card, .gallery-item {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-card, .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card, .gallery-item {
+        width: calc(100% - 20px);
+    }
+}
