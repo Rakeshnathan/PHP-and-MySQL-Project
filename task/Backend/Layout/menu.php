@@ -15,21 +15,21 @@
 
   <li class="nav-item">
     <a class="nav-link collapsed" href="movie-view.php">
-      <i class="bi bi-person"></i>
+      <i class="bi bi-film"></i>
       <span>Movie</span>
     </a>
   </li><!-- End Profile Page Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-contact.html">
-      <i class="bi bi-envelope"></i>
-      <span>Contact</span>
+    <a class="nav-link collapsed" href="main-admin-view.php">
+      <i class="bi bi-person"></i>
+      <span>Main-Admin</span>
     </a>
   </li><!-- End Contact Page Nav -->
 
   <li class="nav-item">
     <a class="nav-link collapsed" href="register.php">
-      <i class="bi bi-card-list"></i>
+      <i class="bi bi-clipboard"></i>
       <span>Register</span>
     </a>
   </li><!-- End Register Page Nav -->
