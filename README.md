@@ -1,38 +1,54 @@
-# PHP and MySQL Project
- Project 1 using CRUD for a Personalized Movie Database 
-# 
-For implementing CRUD logic four files are created. 
-movie-view:To view the movie table display all your added movies will be shown. 
-movie-add:For adding movie datas which are movie id (auto incremented ), movie name , Genre , year , Rating and Date / Time when it has been added. 
-movie-edit:To edit the movie datas.
-movie-delete:To delete the movie record.
+# Personalized Movie Database
 
-Layout File has three php files.
+## Overview
 
-Header.php for header having nav bar content and side bar icon along with Login.php and Register.php to login and register.
-When an user logins USERNAME will be displayed on top left corner where login and register nav bar will be changed to username only when an authenticated user logs in.
+This project is a Personalized Movie Database built using PHP and MySQL. It provides users with a platform to manage their movie collections through a simple and intuitive CRUD (Create, Read, Update, Delete) interface. Users can add movies, edit their details, delete them, and view their entire movie list.
 
-Footer.php containing all footer details
-Specifying links and social media accounts.
+## Features
 
-Menu.php which is the dashboard menu.
-having details like Movie (where movie-add,edit,del,view can be seen movie datas ) and login ,regsiter ,main-admin menu.
-# 
-Dashboard.php file is admin page where admin can select movie option to view it mainly menu.php can be used.
+- **User Authentication**: Users can register, log in, and manage their accounts. Logged-in users will see their username in the navigation bar.
+- **CRUD Functionality**: Users can:
+  - **Add Movies**: Input movie details such as name, genre, year, rating, and timestamp.
+  - **View Movies**: Display a list of movies added by the user.
+  - **Edit Movies**: Update movie information.
+  - **Delete Movies**: Remove movies from the database.
+- **Admin Dashboard**: Admins have access to a special dashboard to manage users and their movies.
+- **Total Movie Count**: The dashboard displays the total number of movies added by each user, categorized by genre.
+- **Super Admin Role**: A main admin can view all users' movies and manage them.
 
-Unauth-user folder has Temp-glance.php which is used as HOME page when unauthorized user accesses the dashboard.php file 
-Suppose when in localhost url you can directly access pages by putting movie-view or dashboard.php and can access it so prevent unauth user from using it they will be directed To the HOME page 
-User can register and then login to access it after being authenitcated.
+## Project Structure
 
-Admin can login and access the dashboard.php and new user can register.
+### Core Files
 
-ADMINS / USERS Can only see what movies they have added and CRUD can be done such That user_id is used where different USERS / user_id can add what and see only their movies...  
+- **movie-view.php**: Displays all movies added by the user.
+- **movie-add.php**: Allows users to add a new movie.
+- **movie-edit.php**: Enables users to edit existing movie details.
+- **movie-delete.php**: Handles the deletion of a movie record.
 
-# 
-New task/features to be added :
-In dashborad need to put Total Movie Count along with types like Action movie ---> name , year ,count.
----Added dashboard entries.--
+### Layout Files
 
-Super admin role 
-NEED TO ADD MAIN ADMIN WHERE HE CAN SEE ALL USERS MOVIEs THAT ARE LISTED AND HAS MAIN CONTROL OVER IT. 
+- **header.php**: Contains the navigation bar and sidebar icons. Displays username after user login.
+- **footer.php**: Contains footer details and links to social media accounts.
+- **menu.php**: The main menu for the dashboard, with links to movie management options.
+- **dashboard.php**: Admin page where the admin can access movie management functions.
+
+### User Authentication
+
+- **unauth-user/Temp-glance.php**: The homepage for unauthorized users. Redirects to this page if a user tries to access the dashboard without logging in.
+
+## Getting Started
+
+### Prerequisites
+
+- PHP 7.x or higher
+- MySQL database
+- A local server environment (like XAMPP or MAMP)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/personalized-movie-database.git
+
+
 
